@@ -1,0 +1,2076 @@
+{
+  "$metadata": {
+    "uris": {
+      "jsonLdContext": ""
+    },
+    "version": "2.9",
+    "type": "CliqueGamingCredential"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "This schema is used to represent a Clique Gaming Credential.",
+  "title": "Clique Gaming Credential Schema",
+  "properties": {
+    "credentialSubject": {
+      "description": "Stores the data of the credential",
+      "title": "Credential subject",
+      "properties": {
+        "sumHoursPlayedInTopIGDBCategorySteam": {
+          "description": "Number of hours played in top IGDB category.",
+          "title": "Number of Hours Played in Top IGDB Category",
+          "properties": {
+            "value": {
+              "description": "value",
+              "title": "value",
+              "type": "integer"
+            },
+            "sgxAttestationFileId": {
+              "description": "This is an offchain storage of the SGX attestation for this VC where you can verify in clique.social",
+              "title": "SGX Attestation File ID",
+              "type": "string"
+            },
+            "valueType": {
+              "description": "valueType",
+              "title": "valueType",
+              "type": "string"
+            },
+            "displayType": {
+              "description": "displayType",
+              "title": "displayType",
+              "type": "string"
+            }
+          },
+          "required": [],
+          "type": "object"
+        },
+        "sumHoursPlayedInIGDBCategoryPieChartSteam": {
+          "description": "Number of hours played in IGDB category, shown in PieChart",
+          "title": "Number of Hours Played in IGDB Category in PieChart",
+          "properties": {
+            "sgxAttestationFileId": {
+              "description": "This is an offchain storage of the SGX attestation for this VC where you can verify in clique.social",
+              "title": "SGX Attestation File ID",
+              "type": "string"
+            },
+            "genre": {
+              "description": "genre",
+              "title": "genre",
+              "properties": {
+                "key": {
+                  "description": "key",
+                  "title": "key",
+                  "type": "string"
+                },
+                "displayKey": {
+                  "description": "displayKey",
+                  "title": "displayKey",
+                  "type": "string"
+                },
+                "fighting": {
+                  "description": "fighting",
+                  "title": "fighting",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "shooter": {
+                  "description": "shooter",
+                  "title": "shooter",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "music": {
+                  "description": "music",
+                  "title": "music",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "platform": {
+                  "description": "platform",
+                  "title": "platform",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "puzzle": {
+                  "description": "puzzle",
+                  "title": "puzzle",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "racing": {
+                  "description": "racing",
+                  "title": "racing",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "real-time-strategy-rts": {
+                  "description": "real-time-strategy-rts",
+                  "title": "real-time-strategy-rts",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "role-playing-rpg": {
+                  "description": "role-playing-rpg",
+                  "title": "role-playing-rpg",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "simulator": {
+                  "description": "simulator",
+                  "title": "simulator",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "sport": {
+                  "description": "sport",
+                  "title": "sport",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "strategy": {
+                  "description": "strategy",
+                  "title": "strategy",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "turn-based-strategy-tbs": {
+                  "description": "turn-based-strategy-tbs",
+                  "title": "turn-based-strategy-tbs",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "tactical": {
+                  "description": "tactical",
+                  "title": "tactical",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "quiz-trivia": {
+                  "description": "quiz-trivia",
+                  "title": "quiz-trivia",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "hack-and-slash-beat-em-up": {
+                  "description": "hack-and-slash-beat-em-up",
+                  "title": "hack-and-slash-beat-em-up",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "pinball": {
+                  "description": "pinball",
+                  "title": "pinball",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "adventure": {
+                  "description": "adventure",
+                  "title": "adventure",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "arcade": {
+                  "description": "arcade",
+                  "title": "arcade",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "visual-novel": {
+                  "description": "visual-novel",
+                  "title": "visual-novel",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "indie": {
+                  "description": "indie",
+                  "title": "indie",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "card-and-board-game": {
+                  "description": "card-and-board-game",
+                  "title": "card-and-board-game",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "moba": {
+                  "description": "moba",
+                  "title": "moba",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "point-and-click": {
+                  "description": "point-and-click",
+                  "title": "point-and-click",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "theme": {
+              "description": "theme",
+              "title": "theme",
+              "properties": {
+                "key": {
+                  "description": "key",
+                  "title": "key",
+                  "type": "string"
+                },
+                "displayKey": {
+                  "description": "displayKey",
+                  "title": "displayKey",
+                  "type": "string"
+                },
+                "thriller": {
+                  "description": "thriller",
+                  "title": "thriller",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "science-fiction": {
+                  "description": "science-fiction",
+                  "title": "science-fiction",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "action": {
+                  "description": "action",
+                  "title": "action",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "horror": {
+                  "description": "horror",
+                  "title": "horror",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "survival": {
+                  "description": "survival",
+                  "title": "survival",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "fantasy": {
+                  "description": "fantasy",
+                  "title": "fantasy",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "historical": {
+                  "description": "historical",
+                  "title": "historical",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "stealth": {
+                  "description": "stealth",
+                  "title": "stealth",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "comedy": {
+                  "description": "comedy",
+                  "title": "comedy",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "business": {
+                  "description": "business",
+                  "title": "business",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "drama": {
+                  "description": "drama",
+                  "title": "drama",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "non-fiction": {
+                  "description": "non-fiction",
+                  "title": "non-fiction",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "kids": {
+                  "description": "kids",
+                  "title": "kids",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "sandbox": {
+                  "description": "sandbox",
+                  "title": "sandbox",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "open-world": {
+                  "description": "open-world",
+                  "title": "open-world",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "warfare": {
+                  "description": "warfare",
+                  "title": "warfare",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "4x-explore-expand-exploit-and-exterminate": {
+                  "description": "4x-explore-expand-exploit-and-exterminate",
+                  "title": "4x-explore-expand-exploit-and-exterminate",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "educational": {
+                  "description": "educational",
+                  "title": "educational",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "mystery": {
+                  "description": "mystery",
+                  "title": "mystery",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "party": {
+                  "description": "party",
+                  "title": "party",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "romance": {
+                  "description": "romance",
+                  "title": "romance",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "erotic": {
+                  "description": "erotic",
+                  "title": "erotic",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "gameMode": {
+              "description": "gameMode",
+              "title": "gameMode",
+              "properties": {
+                "key": {
+                  "description": "key",
+                  "title": "key",
+                  "type": "string"
+                },
+                "displayKey": {
+                  "description": "displayKey",
+                  "title": "displayKey",
+                  "type": "string"
+                },
+                "single-player": {
+                  "description": "single-player",
+                  "title": "single-player",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "multiplayer": {
+                  "description": "multiplayer",
+                  "title": "multiplayer",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "co-operative": {
+                  "description": "co-operative",
+                  "title": "co-operative",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "split-screen": {
+                  "description": "split-screen",
+                  "title": "split-screen",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "massively-multiplayer-online-mmo": {
+                  "description": "massively-multiplayer-online-mmo",
+                  "title": "massively-multiplayer-online-mmo",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "battle-royale": {
+                  "description": "battle-royale",
+                  "title": "battle-royale",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "playerPersepective": {
+              "description": "playerPersepective",
+              "title": "playerPersepective",
+              "properties": {
+                "key": {
+                  "description": "key",
+                  "title": "key",
+                  "type": "string"
+                },
+                "displayKey": {
+                  "description": "displayKey",
+                  "title": "displayKey",
+                  "type": "string"
+                },
+                "first-person": {
+                  "description": "first-person",
+                  "title": "first-person",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "third-person": {
+                  "description": "third-person",
+                  "title": "third-person",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "bird-view-slash-isometric": {
+                  "description": "bird-view-slash-isometric",
+                  "title": "bird-view-slash-isometric",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "text": {
+                  "description": "text",
+                  "title": "text",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "side-view": {
+                  "description": "side-view",
+                  "title": "side-view",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "virtual-reality": {
+                  "description": "virtual-reality",
+                  "title": "virtual-reality",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                },
+                "auditory": {
+                  "description": "auditory",
+                  "title": "auditory",
+                  "properties": {
+                    "valueType": {
+                      "description": "valueType",
+                      "title": "valueType",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "value",
+                      "title": "value",
+                      "type": "integer"
+                    },
+                    "name": {
+                      "description": "name",
+                      "title": "name",
+                      "type": "string"
+                    },
+                    "slug": {
+                      "description": "slug",
+                      "title": "slug",
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "type": "object"
+                }
+              },
+              "required": [],
+              "type": "object"
+            }
+          },
+          "required": [],
+          "type": "object"
+        },
+        "sumHoursPlayedInTop10GameSteam": {
+          "description": "Number of hours played in user's top 10 games",
+          "title": "Number of Hours Played in Top 10 Games",
+          "properties": {
+            "valueType": {
+              "description": "valueType",
+              "title": "valueType",
+              "type": "string"
+            },
+            "sgxAttestationFileId": {
+              "description": "This is an offchain storage of the SGX attestation for this VC where you can verify in clique.social",
+              "title": "SGX Attestation File ID",
+              "type": "string"
+            },
+            "value": {
+              "description": "value",
+              "title": "value",
+              "type": "integer"
+            },
+            "level": {
+              "description": "level",
+              "title": "level",
+              "type": "string"
+            }
+          },
+          "required": [],
+          "type": "object"
+        },
+        "avgMonthlySpendingSteam": {
+          "description": "Average amount of money spent each month over the past three years.",
+          "title": "Avg Monthly Amt Spent in Past 3 Years",
+          "properties": {
+            "sgxAttestationFileId": {
+              "description": "This is an offchain storage of the SGX attestation for this VC where you can verify in clique.social",
+              "title": "SGX Attestation File ID",
+              "type": "string"
+            },
+            "Jan": {
+              "description": "Jan",
+              "title": "Jan",
+              "properties": {
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                },
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Feb": {
+              "description": "Feb",
+              "title": "Feb",
+              "properties": {
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Mar": {
+              "description": "Mar",
+              "title": "Mar",
+              "properties": {
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                },
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Apr": {
+              "description": "Apr",
+              "title": "Apr",
+              "properties": {
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "May": {
+              "description": "May",
+              "title": "May",
+              "properties": {
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                },
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Jun": {
+              "description": "Jun",
+              "title": "Jun",
+              "properties": {
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Jul": {
+              "description": "Jul",
+              "title": "Jul",
+              "properties": {
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                },
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Aug": {
+              "description": "Aug",
+              "title": "Aug",
+              "properties": {
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Sep": {
+              "description": "Sep",
+              "title": "Sep",
+              "properties": {
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                },
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Oct": {
+              "description": "Oct",
+              "title": "Oct",
+              "properties": {
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Nov": {
+              "description": "Nov",
+              "title": "Nov",
+              "properties": {
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                },
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                }
+              },
+              "required": [],
+              "type": "object"
+            },
+            "Dec": {
+              "description": "Dec",
+              "title": "Dec",
+              "properties": {
+                "valueType": {
+                  "description": "valueType",
+                  "title": "valueType",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "value",
+                  "title": "value",
+                  "type": "integer"
+                }
+              },
+              "required": [],
+              "type": "object"
+            }
+          },
+          "required": [],
+          "type": "object"
+        },
+        "id": {
+          "description": "Stores the DID of the subject that owns the credential",
+          "title": "Credential subject ID",
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "@context": {
+      "type": ["string", "array", "object"]
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "type": ["string", "object"],
+      "format": "uri",
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": ["id"]
+    },
+    "type": {
+      "type": ["string", "array"],
+      "items": {
+        "type": "string"
+      }
+    },
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "type"],
+      "type": "object"
+    }
+  },
+  "required": [
+    "credentialSubject",
+    "@context",
+    "id",
+    "issuanceDate",
+    "issuer",
+    "type",
+    "credentialSchema"
+  ],
+  "type": "object"
+}

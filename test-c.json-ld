@@ -1,0 +1,1505 @@
+{
+    "@context": [
+        {
+            "@protected": true,
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "CliqueGamingCredential": {
+                "@context": {
+                    "@propagate": true,
+                    "@protected": true,
+                    "polygon-vocab": "urn:uuid:46582332-17ef-4520-813c-4ca183774d10#",
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "sumHoursPlayedInTopIGDBCategorySteam": {
+                        "@context": {
+                            "value": {
+                                "@id": "polygon-vocab:value",
+                                "@type": "xsd:integer"
+                            },
+                            "sgxAttestationFileId": {
+                                "@id": "polygon-vocab:sgxAttestationFileId",
+                                "@type": "xsd:string"
+                            },
+                            "valueType": {
+                                "@id": "polygon-vocab:valueType",
+                                "@type": "xsd:string"
+                            },
+                            "displayType": {
+                                "@id": "polygon-vocab:displayType",
+                                "@type": "xsd:string"
+                            }
+                        },
+                        "@id": "polygon-vocab:sumHoursPlayedInTopIGDBCategorySteam"
+                    },
+                    "sumHoursPlayedInIGDBCategoryPieChartSteam": {
+                        "@context": {
+                            "sgxAttestationFileId": {
+                                "@id": "polygon-vocab:sgxAttestationFileId",
+                                "@type": "xsd:string"
+                            },
+                            "genre": {
+                                "@context": {
+                                    "key": {
+                                        "@id": "polygon-vocab:key",
+                                        "@type": "xsd:string"
+                                    },
+                                    "displayKey": {
+                                        "@id": "polygon-vocab:displayKey",
+                                        "@type": "xsd:string"
+                                    },
+                                    "fighting": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:fighting"
+                                    },
+                                    "shooter": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:shooter"
+                                    },
+                                    "music": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:music"
+                                    },
+                                    "platform": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:platform"
+                                    },
+                                    "puzzle": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:puzzle"
+                                    },
+                                    "racing": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:racing"
+                                    },
+                                    "real-time-strategy-rts": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:real-time-strategy-rts"
+                                    },
+                                    "role-playing-rpg": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:role-playing-rpg"
+                                    },
+                                    "simulator": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:simulator"
+                                    },
+                                    "sport": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:sport"
+                                    },
+                                    "strategy": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:strategy"
+                                    },
+                                    "turn-based-strategy-tbs": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:turn-based-strategy-tbs"
+                                    },
+                                    "tactical": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:tactical"
+                                    },
+                                    "quiz-trivia": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:quiz-trivia"
+                                    },
+                                    "hack-and-slash-beat-em-up": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:hack-and-slash-beat-em-up"
+                                    },
+                                    "pinball": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:pinball"
+                                    },
+                                    "adventure": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:adventure"
+                                    },
+                                    "arcade": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:arcade"
+                                    },
+                                    "visual-novel": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:visual-novel"
+                                    },
+                                    "indie": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:indie"
+                                    },
+                                    "card-and-board-game": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:card-and-board-game"
+                                    },
+                                    "moba": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:moba"
+                                    },
+                                    "point-and-click": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:point-and-click"
+                                    }
+                                },
+                                "@id": "polygon-vocab:genre"
+                            },
+                            "theme": {
+                                "@context": {
+                                    "key": {
+                                        "@id": "polygon-vocab:key",
+                                        "@type": "xsd:string"
+                                    },
+                                    "displayKey": {
+                                        "@id": "polygon-vocab:displayKey",
+                                        "@type": "xsd:string"
+                                    },
+                                    "thriller": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:thriller"
+                                    },
+                                    "science-fiction": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:science-fiction"
+                                    },
+                                    "action": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:action"
+                                    },
+                                    "horror": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:horror"
+                                    },
+                                    "survival": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:survival"
+                                    },
+                                    "fantasy": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:fantasy"
+                                    },
+                                    "historical": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:historical"
+                                    },
+                                    "stealth": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:stealth"
+                                    },
+                                    "comedy": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:comedy"
+                                    },
+                                    "business": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:business"
+                                    },
+                                    "drama": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:drama"
+                                    },
+                                    "non-fiction": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:non-fiction"
+                                    },
+                                    "kids": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:kids"
+                                    },
+                                    "sandbox": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:sandbox"
+                                    },
+                                    "open-world": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:open-world"
+                                    },
+                                    "warfare": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:warfare"
+                                    },
+                                    "4x-explore-expand-exploit-and-exterminate": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:4x-explore-expand-exploit-and-exterminate"
+                                    },
+                                    "educational": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:educational"
+                                    },
+                                    "mystery": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:mystery"
+                                    },
+                                    "party": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:party"
+                                    },
+                                    "romance": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:romance"
+                                    },
+                                    "erotic": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:erotic"
+                                    }
+                                },
+                                "@id": "polygon-vocab:theme"
+                            },
+                            "gameMode": {
+                                "@context": {
+                                    "key": {
+                                        "@id": "polygon-vocab:key",
+                                        "@type": "xsd:string"
+                                    },
+                                    "displayKey": {
+                                        "@id": "polygon-vocab:displayKey",
+                                        "@type": "xsd:string"
+                                    },
+                                    "single-player": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:single-player"
+                                    },
+                                    "multiplayer": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:multiplayer"
+                                    },
+                                    "co-operative": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:co-operative"
+                                    },
+                                    "split-screen": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:split-screen"
+                                    },
+                                    "massively-multiplayer-online-mmo": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:massively-multiplayer-online-mmo"
+                                    },
+                                    "battle-royale": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:battle-royale"
+                                    }
+                                },
+                                "@id": "polygon-vocab:gameMode"
+                            },
+                            "playerPersepective": {
+                                "@context": {
+                                    "key": {
+                                        "@id": "polygon-vocab:key",
+                                        "@type": "xsd:string"
+                                    },
+                                    "displayKey": {
+                                        "@id": "polygon-vocab:displayKey",
+                                        "@type": "xsd:string"
+                                    },
+                                    "first-person": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:first-person"
+                                    },
+                                    "third-person": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:third-person"
+                                    },
+                                    "bird-view-slash-isometric": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:bird-view-slash-isometric"
+                                    },
+                                    "text": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:text"
+                                    },
+                                    "side-view": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:side-view"
+                                    },
+                                    "virtual-reality": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:virtual-reality"
+                                    },
+                                    "auditory": {
+                                        "@context": {
+                                            "valueType": {
+                                                "@id": "polygon-vocab:valueType",
+                                                "@type": "xsd:string"
+                                            },
+                                            "value": {
+                                                "@id": "polygon-vocab:value",
+                                                "@type": "xsd:integer"
+                                            },
+                                            "name": {
+                                                "@id": "polygon-vocab:name",
+                                                "@type": "xsd:string"
+                                            },
+                                            "slug": {
+                                                "@id": "polygon-vocab:slug",
+                                                "@type": "xsd:string"
+                                            }
+                                        },
+                                        "@id": "polygon-vocab:auditory"
+                                    }
+                                },
+                                "@id": "polygon-vocab:playerPersepective"
+                            }
+                        },
+                        "@id": "polygon-vocab:sumHoursPlayedInIGDBCategoryPieChartSteam"
+                    },
+                    "sumHoursPlayedInTop10GameSteam": {
+                        "@context": {
+                            "valueType": {
+                                "@id": "polygon-vocab:valueType",
+                                "@type": "xsd:string"
+                            },
+                            "sgxAttestationFileId": {
+                                "@id": "polygon-vocab:sgxAttestationFileId",
+                                "@type": "xsd:string"
+                            },
+                            "value": {
+                                "@id": "polygon-vocab:value",
+                                "@type": "xsd:integer"
+                            },
+                            "level": {
+                                "@id": "polygon-vocab:level",
+                                "@type": "xsd:string"
+                            }
+                        },
+                        "@id": "polygon-vocab:sumHoursPlayedInTop10GameSteam"
+                    },
+                    "avgMonthlySpendingSteam": {
+                        "@context": {
+                            "sgxAttestationFileId": {
+                                "@id": "polygon-vocab:sgxAttestationFileId",
+                                "@type": "xsd:string"
+                            },
+                            "Jan": {
+                                "@context": {
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    },
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Jan"
+                            },
+                            "Feb": {
+                                "@context": {
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    },
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Feb"
+                            },
+                            "Mar": {
+                                "@context": {
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    },
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Mar"
+                            },
+                            "Apr": {
+                                "@context": {
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    },
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Apr"
+                            },
+                            "May": {
+                                "@context": {
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    },
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    }
+                                },
+                                "@id": "polygon-vocab:May"
+                            },
+                            "Jun": {
+                                "@context": {
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    },
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Jun"
+                            },
+                            "Jul": {
+                                "@context": {
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    },
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Jul"
+                            },
+                            "Aug": {
+                                "@context": {
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    },
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Aug"
+                            },
+                            "Sep": {
+                                "@context": {
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    },
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Sep"
+                            },
+                            "Oct": {
+                                "@context": {
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    },
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Oct"
+                            },
+                            "Nov": {
+                                "@context": {
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    },
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Nov"
+                            },
+                            "Dec": {
+                                "@context": {
+                                    "valueType": {
+                                        "@id": "polygon-vocab:valueType",
+                                        "@type": "xsd:string"
+                                    },
+                                    "value": {
+                                        "@id": "polygon-vocab:value",
+                                        "@type": "xsd:integer"
+                                    }
+                                },
+                                "@id": "polygon-vocab:Dec"
+                            }
+                        },
+                        "@id": "polygon-vocab:avgMonthlySpendingSteam"
+                    }
+                },
+                "@id": "urn:uuid:2e930455-2b05-4908-810b-ed447ab8a36e"
+            }
+        }
+    ]
+}
