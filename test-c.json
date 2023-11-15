@@ -1,7 +1,7 @@
 {
   "$metadata": {
     "uris": {
-      "jsonLdContext": ""
+      "jsonLdContext": "https://raw.githubusercontent.com/the25thbamm/guildxclique/main/test-c.json-ld"
     },
     "version": "2.9",
     "type": "CliqueGamingCredential"
